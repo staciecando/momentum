@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.cdnfonts.com/css/chalk" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="full-pages">
+      <div id="left-page">
+        <!-- GREETING -->
+
+        <form id="login-form" class="input-data hidden">
+          <input
+            required
+            maxlength="15"
+            type="text"
+            placeholder="What's your name?" />
+          <input type="submit" class="submit" value="login"/>
+        </form>
+        <div id="greeting" class="hidden"></div>
+
+        <!------- CLOCK --------->
+
+        <div id="clock">
+          <div class="clock">
+            <div id="seconds-hand"></div>
+            <div id="minutes-hand"></div>
+            <div id="hours-hand"></div>
+            <span id="center"></span>
+
+            <span style="--i: 1"><b>1</b></span>
+            <span style="--i: 2"><b>2</b></span>
+            <span style="--i: 3"><b>3</b></span>
+            <span style="--i: 4"><b>4</b></span>
+            <span style="--i: 5"><b>5</b></span>
+            <span style="--i: 6"><b>6</b></span>
+            <span style="--i: 7"><b>7</b></span>
+            <span style="--i: 8"><b>8</b></span>
+            <span style="--i: 9"><b>9</b></span>
+            <span style="--i: 10"><b>10</b></span>
+            <span style="--i: 11"><b>11</b></span>
+            <span style="--i: 12"><b>12</b></span>
+          </div>
+        </div>
+
+        <!---------- WEATHER ---------->
+        <div id="weatherC">
+          <span class="wea_current">Real-time updates</span>
+          <div id="current">
+            <div>Time</div>
+            <div class="time"></div>
+            <div class="date"></div>
+            <div id="tempC">Temperature</div>
+            <div id="weather">
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+
+        <!---------- QUOTES ---------->
+        <div id="quotesC">
+          <div id="quote">
+            <span></span><br />
+            <span></span>
+          </div>
+        </div>
+      </div>
+      <div id="right-page">
+        <span class="priority">Priority </span>
+        <table id="priorities" class="tbl">
+          <thead>
+            <tr>
+              <th id="empty-table"></th>
+              <th class="horiz">Important</th>
+              <th class="horiz">Not Important</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th id="urgent" class="rotate">Urgent</th>
+              <td class="swim_lane" id="todo-lane"></td>
+              <td class="swim_lane" id="todo-lane"></td>
+            </tr>
+            <tr>
+              <th id="noturgent" class="rotate">Not Urgent</th>
+              <td class="swim_lane" id="todo-lane"></td>
+              <td class="swim_lane" id="todo-lane"></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <span class="todo">To do </span>
+        <div id="todo" class="swim_lane" id="todo-lane">
+          <form id="todo-form">
+            <input
+              type="text"
+              placeholder="Any tasks?"
+              id="todo-input"
+              required />
+          </form>
+          <div class="todo-list">
+            <ul id="todo-list"></ul>
+          </div>
+
+          <div id="quote">
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <img src="img/cover.png" class="cover" width="1200px"/>
+
+  </body>
+
+  <script src="js/hello.js"></script>
+  <script src="js/clock.js"></script>
+  <script src="js/weather.js"></script>
+  <script src="js/quote.js"></script>
+  <script src="js/todo.js"></script>
+  <script src="js/draggable.js"></script>
+  <script src="js/bg.js"></script>
+</html>
