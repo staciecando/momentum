@@ -36,21 +36,18 @@ body {
 #full-pages {
   position: relative;
   z-index: 1;
-  /* border: 1px solid rgb(13, 19, 44); */
   width: 940px;
   height: 610px;
 }
 #left-page {
   position: absolute;
   top: 20px;
-  /* border: 1px solid rgb(144, 44, 44); */
   width: 430px;
   height: 580px;
 }
 #right-page {
   position: relative;
   margin: 20px 504px;
-  /*   border: 1px solid black; */
   width: 430px;
   height: 580px;
 }
@@ -58,7 +55,6 @@ body {
 /* ====================LOGIN FORM==================== */
 
 #login-form {
-  /* border: 2px solid rgb(203, 202, 202);  */
   height: 20px;
   padding: 20px 0 40px 35px;
 }
