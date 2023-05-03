@@ -1,6 +1,7 @@
 const toDoForm = document.getElementById("todo-form");
 const toDoInput = document.querySelector("#todo-form input");
 const toDoList = document.querySelector("#todo-list");
+const todoLane = document.getElementById("todo-lane");
 
 const TODOS_KEY = "todos";
 
@@ -14,7 +15,7 @@ function deleteToDo(event) {
   const li = event.target.parentElement;
   li.remove();
   toDos = toDos.filter((toDo) => toDo.id !== parseInt(li.id));
-  saveToDos();
+  saveToDos(); // deleteToDo에 안적으면 todo지워도 계속 남음(save 됨)
 }
 
 function paintToDo(newTodo) {
@@ -22,15 +23,55 @@ function paintToDo(newTodo) {
   li.id = newTodo.id;
   const span = document.createElement("span");
   span.innerText = newTodo.text;
-  span.draggable = true; // enable drag functionality
-  span.addEventListener("dragstart", handleDragStart);
-  span.addEventListener("dragend", handleDragEnd);
+  span.setAttribute("draggble", "true");
+  span.draggable = true; 
+
+  span.addEventListener("dragstart", () => {
+    span.classList.add("is-dragging");
+  });
+
+  span.addEventListener("dragend", () => {
+    span.classList.remove("is-dragging");
+  });
+ 
+
+  
+
+  function handleDrop(event) {
+    event.preventDefault();
+   
+    const swimlane = event.target.closest(".swim_lane");
+    swimlane.appendChild(li);
+ 
+  }
+  
+  
+  function handleDragOver(event) {
+    event.preventDefault();
+    event.currentTarget.style.backgroundColor = "lightgray";
+  }
+  
+  function handleDragLeave(event) {
+    event.currentTarget.style.backgroundColor = "";
+  }
+  
+  const swimLanes = document.querySelectorAll(".swim_lane");
+  swimLanes.forEach((lane) => {
+    lane.addEventListener("drop", handleDrop);
+    lane.addEventListener("dragover", handleDragOver);
+    lane.addEventListener("dragleave", handleDragLeave);
+  }); 
+
+  /* span.addEventListener("dragstart", handleDragStart);
+  span.addEventListener("dragend", handleDragEnd); */
   const button = document.createElement("button");
   button.innerText = "❌";
   button.addEventListener("click", deleteToDo);
   li.appendChild(span);
   li.appendChild(button);
   toDoList.appendChild(li);
+
+  
 }
 
 function handleToDoSubmit(event) {
@@ -46,36 +87,16 @@ function handleToDoSubmit(event) {
   saveToDos();
 }
 
-function handleDragStart(event) {
+toDoForm.addEventListener("submit", handleToDoSubmit);
+
+/* function handleDragStart(event) {
   event.dataTransfer.setData("text/plain", event.target.id);
   event.currentTarget.style.backgroundColor = "yellow";
-}
-
+} */
+/* 
 function handleDragEnd(event) {
   event.currentTarget.style.backgroundColor = "";
-}
-
-function handleDrop(event) {
-  /*  const itemId = event.dataTransfer.getData("text/plain");
-  const item = document.getElementById(itemId);
-  event.currentTarget.appendChild(item); */
-
-  event.preventDefault();
-  const itemId = event.dataTransfer.getData("text/plain");
-  const item = document.getElementById(itemId);
-  event.currentTarget.insertBefore(item, event.currentTarget.lastChild);
-}
-
-function handleDragOver(event) {
-  event.preventDefault();
-  event.currentTarget.style.backgroundColor = "lightgray";
-}
-
-function handleDragLeave(event) {
-  event.currentTarget.style.backgroundColor = "";
-}
-
-toDoForm.addEventListener("submit", handleToDoSubmit);
+} */
 
 const savedToDos = localStorage.getItem(TODOS_KEY);
 
@@ -84,10 +105,3 @@ if (savedToDos !== null) {
   toDos = parsedToDos;
   parsedToDos.forEach(paintToDo);
 }
-
-const swimLanes = document.querySelectorAll(".swim_lane");
-swimLanes.forEach((lane) => {
-  lane.addEventListener("drop", handleDrop);
-  lane.addEventListener("dragover", handleDragOver);
-  lane.addEventListener("dragleave", handleDragLeave);
-});
