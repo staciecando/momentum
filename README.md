@@ -13,25 +13,25 @@
 
   What does the owner want to convey in a short 5-second video? 
 
-Layout:
+<h1>Layout</h1>
 
 - The main focus & theme: Concentrating on what you want to see ⇒ achieving the user's goals ⇒ completing daily tasks or to-do lists
 
 ⇒ Left: Time, Right: To-do list
 
-Issues:
+<h1>Issues</h1>
 
 - Unable to implement drag & drop for tasks in the to-do list.
 - Submitted and fixed the to-do list part, but need to implement selecting tags.
 - Originally deleted random background images, but some of them were 4000 pixels, causing the diary to feel like it was zoomed out on the screen.
 
-Challenges/struggles 
+<h1>Challenges/struggles</h1> 
 
 - The greeting part worked on Tuesday but disappeared the next day without an input box. I watched Nico's lectures again and typed the same code, but it didn't work. So copied and pasted the greeting part from Nico's GitHub.
 - Only worked on the greeting part on Wednesday and Thursday, but it worked on Thursday night. Still it's still a mystery why it didn't work before.
 
 
-배경:
+<h1>배경</h1>
 
 초반에 반응형 앱을 만들고 싶었지만 컴포넌트 레이아웃에 어려움을 겪어 시간이 너무 많이 들어가게 되었고, 이전에 만든 디지털 플래너를 기초로 사용하게 되었다.
 
@@ -41,22 +41,25 @@ Challenges/struggles
 
 20달러부터 35달러까지의 가격대의 디지털 플래너를 10개 구매하여 틱톡, 유튜브, 웹사이트, 구글에서 제작자를 홍보하였다. 이러한 고려사항을 중점적으로 살펴보았다:
 
-사람들이 왜 디지털 플래너를 구매하는가? ⇒ 제작자의 개성과 정신성.
+-사람들이 왜 디지털 플래너를 구매하는가? ⇒ 제작자의 개성과 정신성.
 
-사람들이 왜 플래너 영상에 좋아요와 반응을 하는가? ⇒ 예쁘고, 레이아웃이 잘 되어 있으며, 배경(창 밖 풍경)이 아름답다.
+-사람들이 왜 플래너 영상에 좋아요와 반응을 하는가? ⇒ 예쁘고, 레이아웃이 잘 되어 있으며, 배경(창 밖 풍경)이 아름답다.
 
-5초짜리 짧은 영상에서 제작자가 전달하려는 메시지는 무엇인가?
+-5초짜리 짧은 영상에서 제작자가 전달하려는 메시지는 무엇인가?
 
-레이아웃:
+<h1>레이아웃</h1>
 
 주요 초점 및 테마: 보고 싶은 것에 집중 ⇒ 사용자의 목표 달성 ⇒ 일일 작업이나 할 일 목록 완료
 ⇒ 왼쪽: 시간, 오른쪽: 할 일 목록
 
-이슈:
+<h1>문제점</h1>
 
 할 일 목록에서 드래그 앤 드롭 구현이 불가능하다.
 할 일 목록 부분을 제출하고 수정했지만, 태그 선택 구현이 필요하다.
 랜덤 배경 이미지를 삭제했으나, 일부 이미지가 4000 픽셀이어서 다이어리가 화면에서 축소된 느낌을 준다.
-도전/어려움
 
-화요일에 인사 부분이 작동했지만 다음 날에는 입력 상자가 없어졌다. Nico의 강의를 다시 시
+<h1>도전/어려움</h1>
+
+화요일에 greeting 부분이 작동했지만 다음 날에는 완전히 greeting하기전에 입력부분이 hidden이 되버렸다.... Nico의 강의를 다시 들었는데 greeting 부분이 저번주 화요일에 되다가 다음날 보니  input 자리도 없고 다 사라졌다. 그래서 니코쌤이 하신 강의 또 보고 따라했는데.. 안되고.... 그래서 니코쌤 것 github에 올려진 greeting 복붙함. 
+
+⇒수, 목요일 동안 greeting 부분만 했는데, 목요일 밤에 되었다.. 아직도 왜 그땐 안됬었는지 미스터리..ㅜㅜ
