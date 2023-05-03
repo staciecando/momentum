@@ -30,7 +30,9 @@
 - The greeting part worked on Tuesday but disappeared the next day without an input box. I watched Nico's lectures again and typed the same code, but it didn't work. So copied and pasted the greeting part from Nico's GitHub.
 - Only worked on the greeting part on Wednesday and Thursday, but it worked on Thursday night. Still it's still a mystery why it didn't work before.
 
-
+<br>
+<br>
+<br>
 <h1>배경</h1>
 
 초반에 반응형 앱을 만들고 싶었지만 컴포넌트 레이아웃에 어려움을 겪어 시간이 너무 많이 들어가게 되었고, 이전에 만든 디지털 플래너를 기초로 사용하게 되었다.
