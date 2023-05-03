@@ -1,6 +1,6 @@
 
 
-<h1>Background<h1>
+<h1>Background</h1>
 
 - Initially wanted to make a responsive app, but struggled with component layouts and took too much time, so used a digital planner made before as a foundation.
 - Among monthly, weekly, and daily pages in the planner, found the daily page with a to-do list to be useful for a momentum app. Wanted to make it so that users could use it every day when they connect to the internet, so considered necessary elements.
