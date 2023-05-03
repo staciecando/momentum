@@ -25,7 +25,7 @@ Issues:
 - Submitted and fixed the to-do list part, but need to implement selecting tags.
 - Originally deleted random background images, but some of them were 4000 pixels, causing the diary to feel like it was zoomed out on the screen.
 
-Challenges/Mysterious points:
+Challenges/struggles 
 
 - The greeting part worked on Tuesday but disappeared the next day without an input box. I watched Nico's lectures again and typed the same code, but it didn't work. So copied and pasted the greeting part from Nico's GitHub.
 - Only worked on the greeting part on Wednesday and Thursday, but it worked on Thursday night. Still it's still a mystery why it didn't work before.
