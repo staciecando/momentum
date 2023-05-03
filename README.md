@@ -7,17 +7,17 @@
 - The digital planner was made with the intention of starting a business and was based on layouts tailored to personal preferences after comparing it with other digital planners.
 - So I compared various other digital planners, purchasing 10 of them, and promoting the planners' creators through TikTok, YouTube, websites, searching their names on Google, etc. Compared planners ranging from cheap ($20) to expensive ($35).These are the considerations I was focusing on:
 
-  Why do people buy them? ⇒ The author's personality and spirituality.
+  - Why do people buy them? ⇒ The author's personality and spirituality.
 
-  Why do people like and react to planner videos? ⇒ They are pretty, the layouts are well-done, and the backgrounds (scenery outside the window) are beautiful.
+  - Why do people like and react to planner videos? ⇒ They are pretty, the layouts are well-done, and the backgrounds (scenery outside the window) are beautiful.
 
-  What does the owner want to convey in a short 5-second video? 
+  - What does the owner want to convey in a short 5-second video? 
 
 <h1>Layout</h1>
 
 - The main focus & theme: Concentrating on what you want to see ⇒ achieving the user's goals ⇒ completing daily tasks or to-do lists
 
-⇒ Left: Time, Right: To-do list
+- =>Left: Time, Right: To-do list
 
 <h1>Issues</h1>
 
